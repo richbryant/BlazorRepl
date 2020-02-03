@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
-using System.Reactive.Threading.Tasks;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
@@ -81,7 +80,6 @@ namespace BlazorRepl.Pages
                         _skipRender = false;
                         break;
                     case "Enter":
-                        Console.WriteLine("you hit Enter");
                         _skipRender = false;
 
                         await Run();
@@ -97,7 +95,6 @@ namespace BlazorRepl.Pages
 
         public async Task Run()
         {
-            Console.WriteLine("Run method");
             var code = Input;
             if (!string.IsNullOrEmpty(code))
             {
@@ -111,7 +108,6 @@ namespace BlazorRepl.Pages
 
         private async Task RunSubmission(string code)
         {
-            Console.WriteLine("RunSubmission Method");
             Output += $@"<br /><span class=""info"">{HttpUtility.HtmlEncode(code)}</span>";
 
             var previousOut = Console.Out;
@@ -165,7 +161,6 @@ namespace BlazorRepl.Pages
 
         private bool TryCompile(string source, out Assembly assembly, out IEnumerable<Diagnostic> errorDiagnostics)
         {
-            Console.WriteLine("TryCompile!");
             assembly = null;
             var scriptCompilation = CSharpCompilation.CreateScriptCompilation(
                 Path.GetRandomFileName(),
