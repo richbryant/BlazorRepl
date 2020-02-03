@@ -1,19 +1,4 @@
 ﻿@layout MainLayout
 @page "/"
-@using System.IO
-@using System.Reflection
-@using System.Threading
-@using System.Web
-@using Microsoft.CodeAnalysis
-@using Microsoft.CodeAnalysis.CSharp
-@using Microsoft.CodeAnalysis.CSharp.Scripting.Hosting
 
-<div id="outer-screen">
-    <div id="inner-screen">
-        <div id="output-outer"><div id="output">@((MarkupString)Output)</div></div>
-        <div id="blank-line">&nbsp;</div>
-        <div id="input-row">
-            <span>&gt;&nbsp;</span><input id="input" @bind-value="@Input" type="text" @onkeyup="OnKeyUp" disabled="@Disabled" autofocus />
-        </div>
-    </div>
-</div>
+<Repl/>

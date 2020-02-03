@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29721.120
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorRepl", "BlazorRepl\BlazorRepl.csproj", "{283F833A-5E26-46E9-BCF7-A80F0AA80520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorRepl", "BlazorRepl\BlazorRepl.csproj", "{283F833A-5E26-46E9-BCF7-A80F0AA80520}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadName.BlazorRepl", "BadName.BlazorRepl\BadName.BlazorRepl.csproj", "{24AE7F7A-E555-4E8F-830A-4D627FD1F376}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{283F833A-5E26-46E9-BCF7-A80F0AA80520}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{283F833A-5E26-46E9-BCF7-A80F0AA80520}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{283F833A-5E26-46E9-BCF7-A80F0AA80520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24AE7F7A-E555-4E8F-830A-4D627FD1F376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24AE7F7A-E555-4E8F-830A-4D627FD1F376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24AE7F7A-E555-4E8F-830A-4D627FD1F376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24AE7F7A-E555-4E8F-830A-4D627FD1F376}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
