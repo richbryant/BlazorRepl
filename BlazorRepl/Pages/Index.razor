@@ -13,7 +13,7 @@
         <div id="output-outer"><div id="output">@((MarkupString)Output)</div></div>
         <div id="blank-line">&nbsp;</div>
         <div id="input-row">
-            <span>&gt;&nbsp;</span><input id="input" @bind-value="@Input" type="text" @onkeydown="OnKeyDown" disabled="@Disabled" autofocus />
+            <span>&gt;&nbsp;</span><input id="input" @bind-value="@Input" type="text" @onkeyup="OnKeyUp" disabled="@Disabled" autofocus />
         </div>
     </div>
 </div>
